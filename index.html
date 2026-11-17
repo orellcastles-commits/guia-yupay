@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GUÍA FINANCIERA YUPAY</title>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons (CDN) -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ========== OVERLAY (móvil) ========== -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- ========== SIDEBAR ========== -->
+  <aside class="sidebar" id="sidebar" role="navigation" aria-label="Menú principal">
+
+    <!-- Logo / Brand -->
+    <div class="sidebar__brand">
+      <div class="sidebar__logo">
+        <span class="logo-icon"><i data-lucide="landmark"></i></span>
+        <span class="logo-text">GUÍA FINANCIERA YUPAY</span>
+      </div>
+      <span class="bee-deco bee-deco--sidebar" aria-hidden="true">🐝</span>
+      <button class="sidebar__close-btn" id="sidebarCloseBtn" aria-label="Cerrar menú">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+
+    <!-- Label -->
+    <p class="sidebar__label">NAVEGACIÓN</p>
+
+    <!-- Nav Links -->
+    <nav>
+      <ul class="sidebar__nav" role="list">
+        <li>
+          <a href="#inicio" class="sidebar__link active" data-section="inicio">
+            <i data-lucide="home"></i>
+            <span>Inicio</span>
+          </a>
+        </li>
+        <li>
+          <a href="#modulo1" class="sidebar__link" data-section="modulo1">
+            <i data-lucide="book-open"></i>
+            <span>Guía de Registros</span>
+            <span class="badge badge--green">Nuevo</span>
+          </a>
+        </li>
+        <li>
+          <a href="#modulo2" class="sidebar__link" data-section="modulo2">
+            <i data-lucide="bar-chart-2"></i>
+            <span>Guía de Precios</span>
+          </a>
+        </li>
+        <li>
+          <a href="#modulo3" class="sidebar__link" data-section="modulo3">
+            <i data-lucide="file-text"></i>
+            <span>Guía de Consejos</span>
+          </a>
+        </li>
+        <li>
+          <a href="#modulo4" class="sidebar__link" data-section="modulo4">
+            <i data-lucide="trending-up"></i>
+            <span>Guía de Calculadoras</span>
+          </a>
+        </li>
+        <li>
+          <a href="#glosario" class="sidebar__link" data-section="glosario">
+            <i data-lucide="book-marked"></i>
+            <span>Glosario del Contador</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Footer del sidebar -->
+    <div class="sidebar__footer">
+      <div class="sidebar__footer-info">
+        <i data-lucide="graduation-cap"></i>
+        <div>
+          <p class="sidebar__footer-title">Contaduría Técnica</p>
+          <p class="sidebar__footer-sub">Gestión de Emprendimientos</p>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========== WRAPPER PRINCIPAL ========== -->
+  <div class="layout-wrapper">
+
+    <!-- TOP BAR (móvil) -->
+    <header class="topbar" role="banner">
+      <button class="topbar__hamburger" id="hamburgerBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="sidebar">
+        <i data-lucide="menu"></i>
+      </button>
+      <div class="topbar__brand">
+        <i data-lucide="landmark"></i>
+        <span>Guía Yupay</span>
+      </div>
+      <div class="topbar__spacer"></div>
+      <button class="topbar__theme-btn" id="themeToggleBtn" aria-label="Alternar modo oscuro">
+        <i data-lucide="sun" id="themeIcon"></i>
+      </button>
+    </header>
+
+    <!-- ========== MAIN ========== -->
+    <main class="main-content" id="mainContent">
+
+      <!-- ===== SECCIÓN INICIO ===== -->
+      <section id="inicio" class="section section--hero">
+
+        <!-- Hero Card Principal -->
+        <div class="hero">
+          <div class="hero__tag">
+            <i data-lucide="zap"></i>
+            Tutorial Interactivo · Versión 2024
+          </div>
+          <span class="bee-deco bee-deco--hero" aria-hidden="true">🐝</span>
+
+          <h1 class="hero__title">
+            Aprende a gestionar las finanzas de tu emprendimiento con
+            <span class="highlight">Yupay</span>
+          </h1>
+
+          <p class="hero__description">
+            La herramienta perfecta para todos los que desean gestionar de forma inteligente
+            los ingresos y egresos de sus emprendimientos. Aprende a usar Yupay y toma el control
+            de tus finanzas con claridad y confianza.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#modulo1" class="btn btn--primary btn--lg">
+              <i data-lucide="play-circle"></i>
+              Empezar la Guía
+            </a>
+            <a href="#glosario" class="btn btn--outline btn--lg">
+              <i data-lucide="book-marked"></i>
+              Ver Glosario
+            </a>
+          </div>
+
+          <!-- Stats rápidos -->
+          <div class="hero__stats">
+            <div class="stat-chip">
+              <i data-lucide="layers"></i>
+              <span><strong>4</strong> Guías Prácticas</span>
+            </div>
+            <div class="stat-chip">
+              <i data-lucide="smartphone"></i>
+              <span>App <strong>gratuita</strong></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cards de guías (preview) -->
+        <div class="modules-preview">
+          <h2 class="section-title">¿Qué aprenderás?</h2>
+          <div class="cards-grid">
+
+            <div class="module-card module-card--green">
+              <span class="bee-deco bee-deco--card" aria-hidden="true">🐝</span>
+              <div class="module-card__icon">
+                <i data-lucide="book-open"></i>
+              </div>
+              <div class="module-card__content">
+                <span class="module-card__num">Guía 1</span>
+                <h3 class="module-card__title">Guía de Registros</h3>
+                <p class="module-card__desc">Aprende a registrar ingresos y gastos diarios de forma ordenada en Yupay.</p>
+              </div>
+              <a href="#modulo1" class="module-card__link">
+                Ir a la guía <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+
+            <div class="module-card module-card--blue">
+              <div class="module-card__icon">
+                <i data-lucide="bar-chart-2"></i>
+              </div>
+              <div class="module-card__content">
+                <span class="module-card__num">Guía 2</span>
+                <h3 class="module-card__title">Guía de Precios</h3>
+                <p class="module-card__desc">Revisa proyecciones de precios del INE por región y cuida tus márgenes.</p>
+              </div>
+              <a href="#modulo2" class="module-card__link">
+                Ir a la guía <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+
+            <div class="module-card module-card--purple">
+              <span class="bee-deco bee-deco--card" aria-hidden="true">🐝</span>
+              <div class="module-card__icon">
+                <i data-lucide="file-text"></i>
+              </div>
+              <div class="module-card__content">
+                <span class="module-card__num">Guía 3</span>
+                <h3 class="module-card__title">Guía de Consejos</h3>
+                <p class="module-card__desc">Usa el detector de riesgos financieros y mantén tu negocio protegido.</p>
+              </div>
+              <a href="#modulo3" class="module-card__link">
+                Ir a la guía <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+
+            <div class="module-card module-card--red">
+              <div class="module-card__icon">
+                <i data-lucide="trending-up"></i>
+              </div>
+              <div class="module-card__content">
+                <span class="module-card__num">Guía 4</span>
+                <h3 class="module-card__title">Guía de Calculadoras</h3>
+                <p class="module-card__desc">Simula préstamos, tablas de amortización y calcula el interés compuesto.</p>
+              </div>
+              <a href="#modulo4" class="module-card__link">
+                Ir a la guía <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ===== GUÍA 1: REGISTRO ===== -->
+      <section id="modulo1" class="section">
+        <div class="module-section">
+          <div class="module-section__header module-section__header--green">
+            <div class="module-section__header-icon">
+              <i data-lucide="book-open"></i>
+            </div>
+            <div>
+              <span class="module-section__label">Guía de Registros</span>
+              <h2 class="module-section__title">Control de tu negocio</h2>
+            </div>
+          </div>
+
+          <div class="module-section__body">
+            <p class="module-section__intro">
+              Aprende a registrar cada movimiento de tu negocio de forma ordenada usando Yupay.
+              Un registro preciso es la base de unas finanzas saludables.
+            </p>
+
+            <!-- Paso a paso -->
+            <h3 class="module-section__subtitle">
+              <i data-lucide="list-ordered"></i> Paso a paso: Registrar un movimiento
+            </h3>
+            <ol class="steps-list">
+              <li class="steps-list__item">
+                <span class="steps-list__num">1</span>
+                <div class="steps-list__content">
+                  <strong>Toca el botón verde "+ Agregar"</strong> en la pantalla principal de Yupay.
+                  Encontrarás este botón en la esquina inferior derecha de la app.
+                </div>
+              </li>
+              <li class="steps-list__item">
+                <span class="steps-list__num">2</span>
+                <div class="steps-list__content">
+                  <strong>Selecciona si es Ingreso o Gasto.</strong> Los ingresos son entradas de dinero
+                  (ventas, cobros). Los gastos son salidas (compras, servicios, pagos).
+                </div>
+              </li>
+              <li class="steps-list__item">
+                <span class="steps-list__num">3</span>
+                <div class="steps-list__content">
+                  <strong>Escribe el monto exacto</strong> de la transacción. Usa punto o coma decimal
+                  según corresponda (ej: Bs. 150,50).
+                </div>
+              </li>
+              <li class="steps-list__item">
+                <span class="steps-list__num">4</span>
+                <div class="steps-list__content">
+                  <strong>Agrega una descripción breve</strong> (ej: "Venta de pan", "Compra de harina").
+                  Esto te ayudará a identificar el movimiento en tus reportes.
+                </div>
+              </li>
+              <li class="steps-list__item">
+                <span class="steps-list__num">5</span>
+                <div class="steps-list__content">
+                  <strong>Confirma y guarda.</strong> Yupay registrará automáticamente la fecha y hora.
+                  El movimiento aparecerá en tu historial de inmediato.
+                </div>
+              </li>
+            </ol>
+
+            <!-- Captura de pantalla: Registro -->
+            <div class="screenshot-gallery">
+              <img
+                src="assets/registro.jpeg"
+                alt="Captura de pantalla: pantalla de registro en Yupay"
+                class="screenshot"
+              />
+            </div>
+
+            <!-- Tip de contaduría -->
+            <div class="tip-box">
+              <div class="tip-box__header">
+                <i data-lucide="graduation-cap"></i>
+                <span>Tip de Contaduría</span>
+              </div>
+              <p>
+                <strong>Separa siempre el dinero del negocio del dinero personal.</strong>
+                Registra cada retiro que hagas para uso personal como un gasto con la categoría
+                "Retiro del propietario". Mezclar ambas finanzas es uno de los errores más comunes
+                en emprendimientos pequeños y dificulta conocer la rentabilidad real de tu negocio.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== GUÍA 2: PRECIOS ===== -->
+      <section id="modulo2" class="section">
+        <div class="module-section">
+          <div class="module-section__header module-section__header--blue">
+            <div class="module-section__header-icon">
+              <i data-lucide="bar-chart-2"></i>
+            </div>
+            <div>
+              <span class="module-section__label">Guía de Precios</span>
+              <h2 class="module-section__title">Precios y Canasta</h2>
+            </div>
+          </div>
+
+          <div class="module-section__body">
+            <p class="module-section__intro">
+              Yupay te muestra las proyecciones de precios de la canasta básica del INE por
+              departamento. Usa esta información para ajustar tus precios de venta a tiempo.
+            </p>
+
+            <!-- Paso a paso -->
+            <h3 class="module-section__subtitle">
+              <i data-lucide="list-ordered"></i> Paso a paso: Consultar proyecciones del INE
+            </h3>
+            <ol class="steps-list">
+              <li class="steps-list__item">
+                <span class="steps-list__num">1</span>
+                <div class="steps-list__content">
+                  <strong>Ingresa a la sección "Precios"</strong> desde el menú principal de Yupay
+                  (ícono de gráfica de barras).
+                </div>
+              </li>
+              <li class="steps-list__item">
+                <span class="steps-list__num">2</span>
+                <div class="steps-list__content">
+                  <strong>Selecciona tu departamento</strong> en el selector desplegable.
+                  Los datos del INE se actualizan mensualmente para cada región del país.
+                </div>
+              </li>
+              <li class="steps-list__item">
+                <span class="steps-list__num">3</span>
+                <div class="steps-list__content">
+                  <strong>Revisa la proyección del mes actual y el siguiente.</strong>
+                  Verás qué productos de la canasta básica tienen tendencia al alza (flecha roja)
+                  o a la baja (flecha verde).
+                </div>
+              </li>
+              <li class="steps-list__item">
+                <span class="steps-list__num">4</span>
+                <div class="steps-list__content">
+                  <strong>Compara con tus costos registrados.</strong> Yupay cruza automáticamente
+                  los insumos que ya registraste con los precios del INE para alertarte si tu
+                  margen está en riesgo.
+                </div>
+              </li>
+            </ol>
+
+            <!-- Capturas de pantalla: Precios -->
+            <div class="screenshot-gallery">
+              <img
+                src="assets/precios.jpeg"
+                alt="Captura de pantalla: sección de precios e INE en Yupay"
+                class="screenshot"
+              />
+              <img
+                src="assets/precios2.jpeg"
+                alt="Captura de pantalla: detalle de proyecciones de precios en Yupay"
+                class="screenshot"
+              />
+            </div>
+
+            <!-- Tip de contaduría -->
+            <div class="tip-box">
+              <div class="tip-box__header">
+                <i data-lucide="graduation-cap"></i>
+                <span>Tip de Contaduría</span>
+              </div>
+              <p>
+                <strong>Ajusta tus precios de venta si suben los insumos.</strong>
+                Muchos emprendedores mantienen el mismo precio de venta por miedo a perder
+                clientes, absorbiendo el aumento de costos en su propio bolsillo.
+                Revisa tu estructura de costos cada mes: si el costo de producción sube un 10%,
+                tu precio de venta debe reflejar al menos una parte de ese incremento para
+                mantener la rentabilidad.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== GUÍA 3: CONSEJOS ===== -->
+      <section id="modulo3" class="section">
+        <div class="module-section">
+          <div class="module-section__header module-section__header--purple">
+            <div class="module-section__header-icon">
+              <i data-lucide="file-text"></i>
+            </div>
+            <div>
+              <span class="module-section__label">Guía de Consejos</span>
+              <h2 class="module-section__title">Consejos y Seguridad</h2>
+            </div>
+          </div>
+
+          <div class="module-section__body">
+            <p class="module-section__intro">
+              Yupay incluye un detector de riesgos financieros y un asistente de dudas para
+              proteger tu negocio de malas decisiones y posibles fraudes.
+            </p>
+
+            <!-- Paso a paso -->
+            <h3 class="module-section__subtitle">
+              <i data-lucide="list-ordered"></i> Paso a paso: Usar el detector de riesgos
+            </h3>
+            <ol class="steps-list">
+              <li class="steps-list__item">
+                <span class="steps-list__num">1</span>
+                <div class="steps-list__content">
+                  <strong>Accede a la sección "Consejos"</strong> desde el menú inferior de la app.
+                  Verás el panel de alertas activas para tu negocio.
+                </div>
+              </li>
+              <li class="steps-list__item">
+                <span class="steps-list__num">2</span>
+                <div class="steps-list__content">
+                  <strong>Lee las alertas de riesgo personalizadas.</strong> Yupay analiza tus
+                  registros y te avisa si detecta patrones preocupantes: gastos que superan
+                  ingresos, stock bajo, o pagos atrasados frecuentes.
+                </div>
+              </li>
+              <li class="steps-list__item">
+                <span class="steps-list__num">3</span>
+                <div class="steps-list__content">
+                  <strong>Usa el asistente de dudas financieras.</strong> Escribe tu pregunta
+                  en lenguaje simple (ej: "¿Qué es el IGV?", "¿Cómo calculo mi ganancia?")
+                  y recibirás una explicación clara y adaptada al contexto boliviano.
+                </div>
+              </li>
+              <li class="steps-list__item">
+                <span class="steps-list__num">4</span>
+                <div class="steps-list__content">
+                  <strong>Marca las alertas como atendidas</strong> una vez que hayas tomado
+                  acción. Esto mantiene tu panel limpio y enfocado en los riesgos pendientes.
+                </div>
+              </li>
+            </ol>
+
+            <!-- Capturas de pantalla: Consejos -->
+            <div class="screenshot-gallery">
+              <img
+                src="assets/consejos.jpeg"
+                alt="Captura de pantalla: panel de consejos y alertas en Yupay"
+                class="screenshot"
+              />
+              <img
+                src="assets/consejos2.jpeg"
+                alt="Captura de pantalla: detector de riesgos financieros en Yupay"
+                class="screenshot"
+              />
+            </div>
+
+            <!-- Tip de contaduría -->
+            <div class="tip-box">
+              <div class="tip-box__header">
+                <i data-lucide="graduation-cap"></i>
+                <span>Tip de Contaduría</span>
+              </div>
+              <p>
+                <strong>Evita los fraudes de inversión que prometen ganancias extraordinarias.</strong>
+                Si alguien te ofrece duplicar tu dinero en pocos días o semanas, es una señal de
+                alerta. Ninguna inversión legítima garantiza rendimientos tan altos sin riesgo.
+                Antes de invertir el dinero de tu negocio, consulta con un contador certificado
+                o con la ASFI (Autoridad de Supervisión del Sistema Financiero de Bolivia).
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== GUÍA 4: CALCULADORAS ===== -->
+      <section id="modulo4" class="section">
+        <div class="module-section">
+          <div class="module-section__header module-section__header--red">
+            <div class="module-section__header-icon">
+              <i data-lucide="trending-up"></i>
+            </div>
+            <div>
+              <span class="module-section__label">Guía de Calculadoras</span>
+              <h2 class="module-section__title">Calculadoras Financieras</h2>
+            </div>
+          </div>
+
+          <div class="module-section__body">
+            <p class="module-section__intro">
+              Toma decisiones financieras inteligentes con el simulador de préstamos y la
+              calculadora de interés compuesto integradas en Yupay.
+            </p>
+
+            <!-- Paso a paso con capturas distribuidas -->
+            <h3 class="module-section__subtitle">
+              <i data-lucide="list-ordered"></i> Herramientas Financieras y Paso a Paso
+            </h3>
+            <ol class="steps-list">
+              <li class="steps-list__item">
+                <span class="steps-list__num">1</span>
+                <div class="steps-list__content">
+                  <strong>Ingresa al menú de Calculadoras y Herramientas.</strong>
+                  Desde la barra de navegación de Yupay, accede al panel de herramientas financieras donde encontrarás el simulador de préstamos, cálculo de cuotas e interés compuesto.
+                  <img
+                    src="assets/calculadora.jpeg"
+                    alt="Captura de pantalla: panel de herramientas y calculadoras en Yupay"
+                    class="screenshot"
+                  />
+                </div>
+              </li>
+              <li class="steps-list__item">
+                <span class="steps-list__num">2</span>
+                <div class="steps-list__content">
+                  <strong>Simulador de Préstamos:</strong> Ingresa el monto a solicitar, la tasa de interés anual (TEA) y el plazo en meses. Yupay calculará de inmediato tu cuota fija mensual estimada.
+                  <img
+                    src="assets/calculadora2.jpeg"
+                    alt="Captura de pantalla: simulador de préstamos y cuotas en Yupay"
+                    class="screenshot"
+                  />
+                </div>
+              </li>
+              <li class="steps-list__item">
+                <span class="steps-list__num">3</span>
+                <div class="steps-list__content">
+                  <strong>Tabla de Amortización:</strong> Desliza para revisar el desglose cuota a cuota. Observa con exactitud cuánto dinero va a la amortización de capital y cuánto a intereses.
+                  <img
+                    src="assets/calculadora3.jpeg"
+                    alt="Captura de pantalla: tabla de amortización detallada en Yupay"
+                    class="screenshot"
+                  />
+                </div>
+              </li>
+              <li class="steps-list__item">
+                <span class="steps-list__num">4</span>
+                <div class="steps-list__content">
+                  <strong>Calculadora de Interés Compuesto:</strong> Proyecta el crecimiento de tu fondo de reserva o ahorros introduciendo el capital inicial, aportes periódicos y tasa anual.
+                  <img
+                    src="assets/calculadora4.jpeg"
+                    alt="Captura de pantalla: calculadora de interés compuesto en Yupay"
+                    class="screenshot"
+                  />
+                </div>
+              </li>
+              <li class="steps-list__item">
+                <span class="steps-list__num">5</span>
+                <div class="steps-list__content">
+                  <strong>Comparación de Escenarios y Pagos:</strong> Compara distintas combinaciones de tasa y tiempo para asegurarte de que la cuota sea sostenible para tu flujo de caja.
+                  <img
+                    src="assets/calculadora5.jpeg"
+                    alt="Captura de pantalla: comparación de escenarios y pagos en Yupay"
+                    class="screenshot"
+                  />
+                </div>
+              </li>
+            </ol>
+
+            <!-- Tip de contaduría -->
+            <div class="tip-box">
+              <div class="tip-box__header">
+                <i data-lucide="graduation-cap"></i>
+                <span>Tip de Contaduría</span>
+              </div>
+              <p>
+                <strong>Revisa siempre la tabla de amortización antes de endeudarte.</strong>
+                Muchos emprendedores solo miran la cuota mensual sin calcular cuánto pagarán
+                en total al banco. Un préstamo de Bs. 10.000 a 36 meses al 18% TEA puede
+                significar pagar más de Bs. 13.000 en total. Conocer el costo real del
+                financiamiento te permite comparar opciones y elegir la más conveniente.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== GLOSARIO ===== -->
+      <section id="glosario" class="section">
+        <div class="module-section">
+          <div class="module-section__header module-section__header--gold">
+            <div class="module-section__header-icon">
+              <i data-lucide="book-marked"></i>
+            </div>
+            <div>
+              <span class="module-section__label">Referencia</span>
+              <h2 class="module-section__title">Glosario del Contador</h2>
+            </div>
+          </div>
+
+          <div class="module-section__body">
+            <p class="module-section__intro">
+              Términos financieros clave explicados en lenguaje sencillo para emprendedores.
+            </p>
+
+            <div class="glossary-list">
+
+              <div class="glossary-item">
+                <div class="glossary-item__term">
+                  <i data-lucide="percent"></i>
+                  <span>Interés Compuesto</span>
+                </div>
+                <p class="glossary-item__def">
+                  Es el interés que se calcula no solo sobre el capital inicial, sino también
+                  sobre los intereses acumulados en períodos anteriores. Es el principio detrás
+                  del crecimiento exponencial de los ahorros: "ganar intereses sobre los intereses".
+                  <em>Ejemplo: Bs. 1.000 al 10% anual compuesto se convierten en Bs. 1.610 en 5 años.</em>
+                </p>
+              </div>
+
+              <div class="glossary-item">
+                <div class="glossary-item__term">
+                  <i data-lucide="calendar-check"></i>
+                  <span>Amortización</span>
+                </div>
+                <p class="glossary-item__def">
+                  Es el proceso de pago gradual de una deuda mediante cuotas periódicas que
+                  incluyen una parte de capital (el préstamo original) y una parte de intereses.
+                  Una <strong>tabla de amortización</strong> muestra exactamente cuánto se paga
+                  de cada componente en cada cuota durante la vida del crédito.
+                </p>
+              </div>
+
+              <div class="glossary-item">
+                <div class="glossary-item__term">
+                  <i data-lucide="landmark"></i>
+                  <span>DPF (Depósito a Plazo Fijo)</span>
+                </div>
+                <p class="glossary-item__def">
+                  Es un instrumento de ahorro bancario en el que depositas una suma de dinero
+                  durante un plazo determinado (30, 60, 90 días, o más) a cambio de una tasa de
+                  interés fija. El banco no puede usar ese dinero antes del vencimiento y tú
+                  recibes el capital más los intereses al final del plazo. Es una de las
+                  opciones de inversión más seguras disponibles en Bolivia.
+                </p>
+              </div>
+
+              <div class="glossary-item">
+                <div class="glossary-item__term">
+                  <i data-lucide="arrow-left-right"></i>
+                  <span>Flujo de Caja</span>
+                </div>
+                <p class="glossary-item__def">
+                  Registro de todas las entradas y salidas de dinero de un negocio en un período
+                  determinado. Un flujo de caja positivo significa que ingresan más fondos de los
+                  que salen. Es el indicador más importante de la liquidez diaria de tu emprendimiento.
+                </p>
+              </div>
+
+              <div class="glossary-item">
+                <div class="glossary-item__term">
+                  <i data-lucide="tag"></i>
+                  <span>TEA (Tasa Efectiva Anual)</span>
+                </div>
+                <p class="glossary-item__def">
+                  Es la tasa de interés real que pagas por un préstamo o ganas por un depósito
+                  en un año, considerando la capitalización de intereses. Permite comparar
+                  productos financieros de distintos bancos de manera justa, independientemente
+                  de su frecuencia de cobro.
+                </p>
+              </div>
+
+              <div class="glossary-item">
+                <div class="glossary-item__term">
+                  <i data-lucide="package"></i>
+                  <span>Inventario</span>
+                </div>
+                <p class="glossary-item__def">
+                  Conjunto de bienes (productos terminados, materias primas, insumos) que posee
+                  un negocio para su venta o uso en la producción. Llevar un control actualizado
+                  del inventario evita quiebres de stock, pérdidas por vencimiento y robos hormiga.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <span class="bee-deco bee-deco--footer" aria-hidden="true">🐝</span>
+      <p>Hecho por estudiantes de Sistemas Informáticos, CEA Man Césped. Cochabamba - Bolivia.</p>
+    </footer>
+
+  </div><!-- /.layout-wrapper -->
+
+  <!-- JS propio -->
+  <script src="js/main.js"></script>
+</body>
+</html>

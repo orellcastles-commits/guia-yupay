@@ -1,0 +1,108 @@
+📁 PASO 2: Arquitectura y Contenido Web (Yupay para Emprendedores)
+1. Mapa del Sitio (Estructura de Navegación)
+La web tendrá un diseño Mobile-First (se verá bien en celular) y en computadora usará un menú lateral fijo (Sidebar) con índice de contenidos, inspirado en Ninja Excel.
+
+Inicio: Presentación de la herramienta y el objetivo del curso.
+
+Módulo 1: El Registro (Control de tu negocio) -> Basado en la Pantalla 1.
+
+Módulo 2: Precios y Canasta (Para no perder dinero) -> Basado en las Pantallas 2 y 3.
+
+Módulo 3: Consejos y Seguridad (Protege tus ganancias) -> Basado en las Pantallas 4 y 7.
+
+Módulo 4: Calculadoras (Inversión y Deudas) -> Basado en las Pantallas 5, 6, 8, 9 y 10.
+
+Glosario del Contador: Términos clave (Interés compuesto, DPF, Amortización).
+
+2. Redacción de Contenidos y Tips Contables
+🏠 INICIO
+Título: Aprende a gestionar las finanzas de tu emprendimiento con Yupay
+
+Introducción: Bienvenido, futuro contador. Sabemos que manejas la teoría, pero llevar las finanzas de tu propio negocio es otro nivel. Yupay es tu aliada perfecta: una app boliviana, gratuita y fácil de usar que te ayudará a tomar decisiones financieras inteligentes.
+
+Botón de acción: [Empezar el Tutorial]
+
+📝 MÓDULO 1: El Registro (Control de tu negocio)
+Objetivo: Aprender a registrar ingresos y gastos para conocer el flujo de caja real de tu emprendimiento.
+
+Paso a Paso:
+
+Abre la app y visualiza tu Balance actual. ¡No te asustes si la abeja te da consejos!
+Toca el botón verde "+ Agregar" en la esquina inferior derecha.
+Selecciona si es un Ingreso (flecha verde) o un Gasto (flecha roja).
+Ingresa el monto (en Bolivianos), selecciona la categoría (Ej: "Varios", "Ventas", "Insumos") y guarda.
+💡 Tip de Contaduría: Separa siempre el dinero del negocio del dinero personal. Si usas la misma cuenta para todo, registra cada retiro como un "Gasto" para que tu balance refleje la verdad de tu emprendimiento.
+
+🏪 MÓDULO 2: Precios y Canasta (Para no perder dinero)
+Objetivo: Utilizar las herramientas de proyección de precios para calcular cuánto subirán los insumos de tu negocio en los próximos meses.
+
+Paso a Paso:
+
+Ve a la pestaña "Precios" en el menú inferior.
+Selecciona tu departamento (Ej: Cochabamba).
+Ve a la pestaña "Proyecciones" y selecciona tu canasta guardada.
+Elige el mes futuro (Ej: Mayo 2026) y revisa la variación porcentual.
+💡 Tip de Contaduría: Si vendes empanadas y la proyección del INE dice que el precio de la papa subirá un 4%, ya sabes que debes ajustar el precio de tu producto o buscar un proveedor mayorista antes de que te afecte el margen de ganancia.
+
+💡 MÓDULO 3: Consejos y Seguridad (Protege tus ganancias)
+Objetivo: Aprender a usar las herramientas de educación financiera y evitar caer en fraudes que afecten el capital de tu negocio.
+
+Paso a Paso:
+
+Entra a la pestaña "Consejos".
+Explora "Dudas del sistema financiero" para entender cómo funcionan los bancos en Bolivia (Preguntas frecuentes).
+Usa el "Detector de riesgos" haciendo clic en Ver más.
+Responde las preguntas para saber si estás expuesto a fraudes digitales (¡muy común en emprendedores que venden por redes!).
+💡 Tip de Contaduría: Un emprendimiento puede quebrar en un día si cae en una estafa de inversión rápida. Antes de meter dinero en algo "seguro" o prestar tu cuenta bancaria, usa el detector y consulta las leyes (Código de Comercio, Ley 393).
+
+🧮 MÓDULO 4: Calculadoras (Inversión y Deudas)
+Objetivo: Simular préstamos y calcular rendimientos para saber si una deuda es sostenible para el negocio.
+
+Paso a Paso:
+
+Ve a la pestaña "Calculadoras".
+Para ahorrar: Ingresa al simulador "¿Cuánto crecerá mi ahorro?". Mira cómo funciona el interés compuesto.
+Para deudas: Usa "¿Cuánto pagaré de cuota?". Ingresa el monto que necesitas para tu negocio.
+Desliza hacia abajo para ver la Tabla de pagos (Amortización). Observa cómo al principio pagas más intereses que capital.
+Prueba la opción "¿Qué pasa si pago antes de tiempo?" para ver cuánto dinero ahorras.
+💡 Tip de Contaduría: Nunca saques un préstamo para un negocio sin ver la tabla de amortización. Si tu negocio genera menos ganancia mensual que la cuota del préstamo, la deuda terminará ahogándote. Usa la calculadora para simularlo antes de ir al banco.
+
+📖 GLOSARIO DEL CONTADOR
+Interés compuesto: Ganancia que generan tus propios intereses. ¡El mejor amigo del ahorro!
+
+Amortización: Proceso de pago de una deuda mediante cuotas periódicas.
+
+DPF: Depósito a Plazo Fijo (el banco te paga un interés por dejar tu dinero quieto un tiempo).
+
+3. El "Prompt Maestro" para Antigravity
+(Este es el texto exacto que le vas a dar a Antigravity. Cópialo y pégalo tal cual en la interfaz del agente).
+
+Prompt para Antigravity:
+"Actúa como un desarrollador Frontend Senior y Diseñador UI/UX experto. Tu tarea es crear una página web interactiva y responsiva para enseñar a usar la app 'Yupay'. El público objetivo son estudiantes de contaduría técnica que quieren gestionar sus emprendimientos.
+
+REGLAS DE DISEÑO (Identidad visual de Yupay):
+
+Fondo general: Gris muy claro (#F5F6F8).
+
+Tarjetas y contenedores: Blanco puro (#FFFFFF) con bordes redondeados (16px a 20px) y sombras muy sutiles.
+
+Color principal (Brand): Verde (#6CB36E).
+
+Colores de acento (estados): Azul (#2D7DD2) para préstamos/educación, Rojo (#E63946) para gastos/alertas, Morado (#7B2CBF) para simulaciones.
+
+Tipografía: Sans-serif moderna (ej. 'Inter' o 'Roboto' desde Google Fonts). Títulos en Bold, textos en gris oscuro (#333333).
+
+UI: Íconos lineales (puedes usar Lucide o FontAwesome). Estilo limpio, minimalista y muy amigable.
+
+ESTRUCTURA:
+Crea un Layout con un Menú Lateral (Sidebar) fijo para pantallas de escritorio (inspirado en el índice de contenidos de Ninja Excel) y un menú hamburguesa para móviles. La navegación debe ir hacia las siguientes secciones: Inicio, Módulo 1 (Registro), Módulo 2 (Precios), Módulo 3 (Consejos), Módulo 4 (Calculadoras) y Glosario.
+
+CONTENIDO Y FUNCIONALIDAD:
+
+La página debe tener un efecto de 'Scroll Suave' al hacer clic en el menú lateral.
+
+En cada Módulo, incluye un componente de 'Paso a Paso' con números verdes y un componente visual destacado (un recuadro con fondo gris claro y borde izquierdo verde) para los 'Tips de Contaduría'.
+
+Usa HTML, CSS (Tailwind) y Vanilla JS (o React si lo prefieres, pero que sea de fácil ejecución).
+
+Por ahora, genera la estructura base del proyecto, configura los estilos globales (colores y tipografía) y crea la vista de Inicio. Espera mi confirmación antes de generar los módulos."
